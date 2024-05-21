@@ -584,3 +584,7 @@ profile-photo .img {
         margin-bottom: 30px;
     }
 }
+
+p .discover {
+    text-align: center;
+}
