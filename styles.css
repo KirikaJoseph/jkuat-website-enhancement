@@ -32,6 +32,54 @@ body {
     margin: auto;
 }
 
+.pagenavigation {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+    border-bottom: 2px solid #999494;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+
+.pagenavigation a {
+    color: #000;
+}
+
+.right {
+    margin-right: 30px;
+    display: flex;
+}
+
+.left {
+    margin-left: 30px;
+    display: flex;
+}
+
+.middle {
+    display: flex;
+}
+
+.left:hover {
+    background-color: #e4e4e4;
+}
+
+.middle:hover {
+    background-color: #e4e4e4;
+}
+
+.right:hover {
+    background-color: #e4e4e4;
+}
+
+.icon {
+    align-items: center;
+    padding-top: 5%;
+    margin-right: 10px;
+    margin-left: 10px;
+}
 
 /*---------------------------Navigation Bar---------------------------*/
 
@@ -136,14 +184,16 @@ body {
 }
 
 .FirstElement .profile-photo {
-    width: 320px;
-    height: 320px;
+    width: 290px;
+    height: 290px;
     border-radius: 50%;
     overflow: hidden;
     border: 5px solid #444444;
     box-shadow: 5px 7px 25px rgba(0, 0, 0, 0.5)
 }
-
+.profile-photo{
+    margin-bottom: 60px;
+}
 profile-photo .img {
     height: 100%;
     width: 100%;
@@ -190,8 +240,8 @@ profile-photo .img {
 /*---------------------------About---------------------------*/
 
 .about-area {
-    padding-top: 130px;
-    background-color: #ffffff;
+    padding-top: 50px;
+    background-color: #b2b2b2;
 }
 
 .about {
@@ -199,22 +249,38 @@ profile-photo .img {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 50px;
+    padding-bottom: 3%;
+    padding-left:3%;
+    padding-right:3%;
+    
 }
 
 .about-content {
-    flex-basis: 60%;
+    flex-basis: 100%;
 }
 
 .about-content h4 {
     color: #c12424;
-    font-size: 40px;
+    font-size: 70px;
     line-height: 70px;
     text-transform: capitalize;
+
+}
+
+.container h5{
+    color:#000000;
+    font-size:30px;
+    padding-left:3%;
+    padding-bottom:1.5%;
+    padding-top:0%;
+
+
 }
 
 .about-content ul {
     color: #000000;
     text-align: justify;
+    font: Nunito Semibold;
 }
 
 .about-content ul li {
@@ -223,7 +289,7 @@ profile-photo .img {
 }
 
 .about-skills {
-    flex-basis: 35%;
+    flex-basis: 50%;
     background-color: #ffffff;
 }
 
@@ -238,9 +304,8 @@ profile-photo .img {
 .about-skills ul li:last-child {
     border-bottom: 0;
     padding-bottom: 0;
-    margin-bottom: 0;
+    margin-bottom: 0;
 }
-
 
 /*---------------------------Button---------------------------*/
 
@@ -266,23 +331,29 @@ profile-photo .img {
 
 
 /*---------------------------Education & Internship---------------------------*/
+/*rgba(209, 207, 207, 0.979)*/
+.education-content{
+    background-color:  ;
+    padding-bottom: -10px;
+}
 
 .education-content .row {
     display: flex;
     border-radius: 5px;
-    height: 400px;
-    margin-bottom: 250px;
+    height: 300px;
+    margin-bottom: 25px;
 }
 
 .education-content .title {
-    color: #c12424;
+    color: #111111;
+    font:book antiqua;
 }
 
 .education-content .row .education,
 .education-content .row .internship {
     color: #000000;
-    flex: 0 0 50%;
-    max-width: 50%;
+    flex: 0 0 100%;
+    max-width: 100%;
     margin-top: 30px;
 }
 
@@ -295,21 +366,26 @@ profile-photo .img {
 .education-content .row.timeline-box {
     flex: 0 0 100%;
     max-width: 100%;
+    
+
 }
 
+
 .education-content .row .timeline {
-    /* background-color:#e5e5e5; */
+    background-color: ; 
     padding: 30px 15px;
-    border: 1px solid #000000;
+    /*border: 1px solid #000000;*/
     border-radius: 10px;
     width: 100%;
     position: relative;
+    display: flex;
 }
 
 .education-content .row .timeline-item {
     position: relative;
-    padding-left: 37px;
+    padding-left: 10px;
     padding-bottom: 50px;
+    margin-right: 80px;
 }
 
 .education-content .row .internship .timeline-item {
@@ -322,15 +398,7 @@ profile-photo .img {
     padding-bottom: 0;
 }
 
-.education-content .row .timeline-item::before {
-    content: "";
-    width: 1px;
-    position: absolute;
-    height: 100%;
-    left: 7px;
-    top: 0;
-    background-color: #c12424;
-}
+
 
 .education-content .row .circle-dot {
     position: absolute;
@@ -339,7 +407,7 @@ profile-photo .img {
     height: 15px;
     width: 15px;
     border-radius: 50%;
-    background-color: #e5e5e5;
+    background-color:#f15a24;
 }
 
 .education-content .row .timeline-title {
@@ -352,13 +420,10 @@ profile-photo .img {
     font-weight: 700;
     font-size: 18px;
     margin-bottom: 8px;
+    color:black; /*#0071bc*/
 }
 
-.education-content .row .timeline-text {
-    line-height: 25px;
-    font-size: 16px;
-    text-align: justify;
-}
+
 
 
 /*---------------------------Projects---------------------------*/
@@ -366,29 +431,34 @@ profile-photo .img {
 .project-content {
     padding: 90px 0;
     /* color:#fff;  */
+    margin-top: -150px;
 }
 
 .project-title {
     margin-bottom: 60px;
     text-align: center;
+    
 }
 
 .project-title h4 {
     text-transform: uppercase;
     font-size: 40px;
     line-height: 40px;
-    color: #c12424;
+    color: #070707;
     margin-bottom: 20px;
+    font-family:sans-serif;
 }
 
 .project-title p {
-    color: #000000;
+    color: #101110;
+    font-family: sans-serif;
 }
 
 .projects {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+
 }
 
 .project {
@@ -402,15 +472,16 @@ profile-photo .img {
     text-align: center;
     flex-basis: 32%;
     transition: .3s;
-}
+    background-color: #5caf17;}
+    
 
 .project i {
-    background-color: #c12424;
-    width: 60px;
-    height: 60px;
-    color: #333;
+    background-color: #5caf17;
+    width: 80px;
+    height: 80px;
+    color: #f0f3f0d0;
     font-size: 26px;
-    line-height: 60px;
+    line-height: 100px;
     border-radius: 50%;
 }
 
@@ -427,7 +498,6 @@ profile-photo .img {
 .project:hover {
     border-color: #c12424;
 }
-
 
 /*---------------------------Contact Me---------------------------*/
 
@@ -583,8 +653,4 @@ profile-photo .img {
         flex-basis: 100%;
         margin-bottom: 30px;
     }
-}
-
-p .discover {
-    text-align: center;
 }
