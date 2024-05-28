@@ -333,7 +333,6 @@ profile-photo .img {
 /*---------------------------Education & Internship---------------------------*/
 /*rgba(209, 207, 207, 0.979)*/
 .education-content{
-    background-color:  ;
     padding-bottom: -10px;
 }
 
@@ -372,7 +371,6 @@ profile-photo .img {
 
 
 .education-content .row .timeline {
-    background-color: ; 
     padding: 30px 15px;
     /*border: 1px solid #000000;*/
     border-radius: 10px;
@@ -472,11 +470,11 @@ profile-photo .img {
     text-align: center;
     flex-basis: 32%;
     transition: .3s;
-    background-color: #5caf17;}
+    background-color: #8ac441;}
     
 
 .project i {
-    background-color: #5caf17;
+    background-color: #8ac441;
     width: 80px;
     height: 80px;
     color: #f0f3f0d0;
