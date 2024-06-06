@@ -30,6 +30,7 @@ body {
 .container {
     width: 1170px;
     margin: auto;
+    padding-top: 5px;
 }
 
 .pagenavigation {
@@ -218,6 +219,7 @@ profile-photo .img {
 .profile-text h1 {
     color: #c12424;
     font-size: 3rem;
+    text-align: left;
 }
 
 .profile-text p {
@@ -241,6 +243,7 @@ profile-photo .img {
 
 .about-area {
     padding-top: 50px;
+    margin: 0px 43px;
     background-color: #b2b2b2;
     border-radius: 25px;
 }
@@ -274,6 +277,7 @@ profile-photo .img {
     padding-left:3%;
     padding-bottom:1.5%;
     padding-top:0%;
+    margin-top: -10px;
 
 
 }
@@ -317,17 +321,17 @@ profile-photo .img {
 .btn-group .btn {
     border-color: #d5d5d5;
     color: #fff;
-    background-color: #146915;
+    background-color: #009edf;
     padding: 12px 25px;
     margin: 5px 0;
     margin-right: 7px;
     border-radius: 30px;
-    border: 2px solid #e5e5e5;
+    
     box-shadow: 0 10px 10px -8px rgb(0 0 0 / 78%);
 }
 
 .btn.active {
-    border-color: #c12424;
+   
 }
 
 
@@ -408,7 +412,7 @@ profile-photo .img {
     height: 15px;
     width: 15px;
     border-radius: 50%;
-    background-color:#f15a24;
+    background-color:#f12424;
 }
 
 .education-content .row .timeline-title {
