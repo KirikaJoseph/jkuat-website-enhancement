@@ -655,3 +655,76 @@ profile-photo .img {
         margin-bottom: 30px;
     }
 }
+
+
+
+
+
+
+h1 {
+    font-family: bookman-old-style;
+    font-size: 50px;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+
+.member-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    list-style: decimal inside;
+    padding: 0;
+    
+}
+
+.member-list li {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s, background-color 0.3s;
+    counter-increment: list;
+}
+
+.member-list li::before {
+    content: counter(list) ". ";
+    font-weight: bold;
+    margin-right: 10px;
+   
+}
+
+.member-list li:hover {
+    transform: translateY(-5px);
+    background-color: #e0f7fa;
+}
+
+.member-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.member-details {
+    flex: 1;
+}
+
+.member-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+}
+
+.member-role {
+    color: #777;
+}
