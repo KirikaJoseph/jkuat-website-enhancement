@@ -82,6 +82,7 @@ body {
     margin-left: 10px;
 }
 
+
 /*---------------------------Navigation Bar---------------------------*/
 
 .navbar {}
@@ -192,9 +193,11 @@ body {
     border: 5px solid #444444;
     box-shadow: 5px 7px 25px rgba(0, 0, 0, 0.5)
 }
-.profile-photo{s
+
+.profile-photo {
     margin-bottom: 60px;
 }
+
 profile-photo .img {
     height: 100%;
     width: 100%;
@@ -255,9 +258,8 @@ profile-photo .img {
     align-items: center;
     margin-bottom: 50px;
     padding-bottom: 3%;
-    padding-left:3%;
-    padding-right:3%;
-    
+    padding-left: 3%;
+    padding-right: 3%;
 }
 
 .about-content {
@@ -269,19 +271,16 @@ profile-photo .img {
     font-size: 70px;
     line-height: 70px;
     text-transform: capitalize;
-
 }
 
-.container h5{
-    color:#000000;
-    font-size:30px;
-    padding-left:3%;
-    padding-bottom:1.5%;
-    padding-right:-15px;
-    padding-top:0%;
+.container h5 {
+    color: #000000;
+    font-size: 30px;
+    padding-left: 3%;
+    padding-bottom: 1.5%;
+    padding-right: -15px;
+    padding-top: 0%;
     margin-top: -10px;
-
-
 }
 
 .about-content ul {
@@ -311,8 +310,9 @@ profile-photo .img {
 .about-skills ul li:last-child {
     border-bottom: 0;
     padding-bottom: 0;
-    margin-bottom: 0;
+    margin-bottom: 0;
 }
+
 
 /*---------------------------Button---------------------------*/
 
@@ -328,18 +328,18 @@ profile-photo .img {
     margin: 5px 0;
     margin-right: 7px;
     border-radius: 30px;
-    
     box-shadow: 0 10px 10px -8px rgb(0 0 0 / 78%);
 }
 
-.btn.active {
-   
-}
+.btn.active {}
 
 
 /*---------------------------Education & Internship---------------------------*/
+
+
 /*rgba(209, 207, 207, 0.979)*/
-.education-content{
+
+.education-content {
     padding-bottom: -10px;
     margin-top: -25px;
 }
@@ -353,8 +353,7 @@ profile-photo .img {
 
 .education-content .title {
     color: #111111;
-    font:book antiqua;
-    
+    font: book antiqua;
 }
 
 .education-content .row .education,
@@ -375,10 +374,7 @@ profile-photo .img {
 .education-content .row.timeline-box {
     flex: 0 0 100%;
     max-width: 100%;
-    
-
 }
-
 
 .education-content .row .timeline {
     padding: 30px 15px;
@@ -406,8 +402,6 @@ profile-photo .img {
     padding-bottom: 0;
 }
 
-
-
 .education-content .row .circle-dot {
     position: absolute;
     left: 0;
@@ -415,7 +409,7 @@ profile-photo .img {
     height: 15px;
     width: 15px;
     border-radius: 50%;
-    background-color:#f12424;
+    background-color: #f12424;
 }
 
 .education-content .row .timeline-title {
@@ -428,10 +422,9 @@ profile-photo .img {
     font-weight: 700;
     font-size: 18px;
     margin-bottom: 8px;
-    color:black; /*#0071bc*/
+    color: black;
+    /*#0071bc*/
 }
-
-
 
 
 /*---------------------------Projects---------------------------*/
@@ -445,7 +438,6 @@ profile-photo .img {
 .project-title {
     margin-bottom: 60px;
     text-align: center;
-    
 }
 
 .project-title h4 {
@@ -454,7 +446,7 @@ profile-photo .img {
     line-height: 40px;
     color: #070707;
     margin-bottom: 20px;
-    font-family:sans-serif;
+    font-family: sans-serif;
 }
 
 .project-title p {
@@ -466,7 +458,6 @@ profile-photo .img {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-
 }
 
 .project {
@@ -480,8 +471,8 @@ profile-photo .img {
     text-align: center;
     flex-basis: 32%;
     transition: .3s;
-    background-color: #8ac441;}
-    
+    background-color: #8ac441;
+}
 
 .project i {
     background-color: #8ac441;
@@ -506,6 +497,7 @@ profile-photo .img {
 .project:hover {
     border-color: #c12424;
 }
+
 
 /*---------------------------Contact Me---------------------------*/
 
@@ -663,11 +655,6 @@ profile-photo .img {
     }
 }
 
-
-
-
-
-
 h1 {
     font-family: bookman-old-style;
     font-size: 50px;
@@ -678,14 +665,12 @@ h1 {
     margin-top: 30px;
 }
 
-
 .member-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     list-style: decimal inside;
     padding: 0;
-    
 }
 
 .member-list li {
@@ -694,7 +679,7 @@ h1 {
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, background-color 0.3s;
     counter-increment: list;
 }
@@ -703,7 +688,6 @@ h1 {
     content: counter(list) ". ";
     font-weight: bold;
     margin-right: 10px;
-   
 }
 
 .member-list li:hover {
