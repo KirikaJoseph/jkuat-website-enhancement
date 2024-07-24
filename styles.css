@@ -25,24 +25,18 @@ body {
     font-size: 16px;
     line-height: 24px;
     background-color: #ffffff;
-
 }
-.admin-page h1{
+
+.admin-page h1 {
     color: #0064AA;
     font-size: 32px;
     text-decoration: underline;
-
-
-
 }
-.admin-page1 h1{
+
+.admin-page1 h1 {
     color: #0064AA;
     font-size: 32px;
     text-decoration: underline;
-    
-
-
-
 }
 
 .container {
@@ -345,9 +339,6 @@ body {
     border: 5px solid #444444;
     box-shadow: 5px 7px 25px rgba(0, 0, 0, 0.5)
 }
-
-
-
 
 .profile-photo {
     margin-bottom: 60px;
@@ -832,7 +823,6 @@ h1 {
     padding: 0;
 }
 
-
 .member-list li {
     display: flex;
     align-items: center;
@@ -845,7 +835,7 @@ h1 {
 }
 
 .member-list li::before {
-    content: counter(list) ". ";
+    /* content: counter(list) ". "; */
     font-weight: bold;
     margin-right: 10px;
 }
@@ -878,4 +868,32 @@ h1 {
 
 .member-role {
     color: #777;
+}
+
+@media (max-width: 600px) {
+    .member-list {
+        display: flex;
+        flex-direction: column;
+    }
+    .member-list li {
+        flex-direction: column;
+        align-items: center;
+    }
+    .member-image {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .member-image img {
+        width: 80px;
+        height: 80px;
+    }
+    .member-details {
+        text-align: center;
+    }
+    .member-title {
+        font-size: 1em;
+    }
+    .member-role {
+        font-size: 0.9em;
+    }
 }
