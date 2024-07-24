@@ -812,6 +812,10 @@
         color: #000;
         text-decoration: none;
     }
+ .member-list li a:hover {
+        color: #0064AA;
+    }
+    
     
     .member-list li::before {
         /* content: counter(list) ". "; */
