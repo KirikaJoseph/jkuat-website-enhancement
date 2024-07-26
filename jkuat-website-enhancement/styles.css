@@ -494,6 +494,10 @@ profile-photo .img {
     text-align: justify;
 }
 
+.fas fa-newspaper a {
+    text-decoration: none;
+}
+
 .project:hover {
     border-color: #c12424;
 }

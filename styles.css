@@ -630,6 +630,15 @@
         text-align: justify;
     }
     
+    .project a {
+        text-decoration: none;
+        color: inherit;
+    }
+    
+    .project a:hover {
+        color: #0064AA;
+    }
+    
     .project:hover {
         border-color: #c12424;
     }
